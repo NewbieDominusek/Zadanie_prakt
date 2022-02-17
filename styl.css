@@ -1,0 +1,199 @@
+body{
+    background-image: url('grafika/strona.png');
+    width: 100%;
+    height: 1366px;
+    padding: 0px;
+    margin: 0px;
+}
+#content{
+    height: fit-content;
+    width: fit-content;
+    margin: 50px auto auto auto;
+}
+#tekstL{
+    margin-right: 34px;
+}
+#zdjecie{
+    position: absolute;
+    transform: translateY(40px);
+}
+#tekstP{
+    transform: translateY(-85px);
+}
+#srodek{
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    margin: 100px auto auto auto;
+}
+#firma{
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+#podzialduza{
+    clear: both;
+    margin-top: 40px;
+}
+header{
+    background-image: url('grafika/naglowek.png');
+    width:100%;
+    height: 87px;
+}
+#kafelki{
+    width: 765px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0px;
+    float: left;
+}
+#logo{
+    float: left;
+    background-image: url('grafika/tlo_loga.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 255px;
+    height: 184px;
+}
+#naglowek{
+    width:1020px;
+    display: block;
+    margin: 0px auto auto auto;
+    transform: translateX(10px);
+}
+.bttn{
+    margin-top:35px;
+    border: none;
+    color: transparent;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+}
+.wyrownaj{
+    background-position: center 9px;
+}
+.bttn:hover{
+    background-color: black;
+}
+#wyszukaj{
+    position: absolute;
+    height: 34px;
+    right: 20px;
+    top: 28px;
+}
+#pasek{
+    visibility: hidden;
+}
+#input{
+    visibility: hidden;
+    position: absolute;
+    right: 40px;
+    top:2px;
+    width:180px;
+    height:30px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+#logomale{
+    position: absolute;
+    top: 113px;
+    left: 40px;
+}
+#menu{
+    position: absolute;
+    top: 87px;
+    width: 213px;
+    height:800px;
+    background-color: transparent;
+}
+#wmenu{
+    margin-left: 30px;
+    margin-top: 73px;
+}
+.clearboth{
+    display: block;
+}
+#trojkat{
+    position:absolute;
+    top: 410px;
+    right: 15px;
+}
+#malemenu{
+    position:absolute;
+    top: 440px;
+    right: 10px;
+}
+#stopka{
+    background-image: url('grafika/Stopka.png');
+    width: 100%;
+    height: 68px;
+    margin-top:60px;
+}
+
+.schowaj{
+    left: -155px;
+    animation: schowaj 0.5s;
+}
+.pokaz{
+    left: 0px;
+    animation: pokaz 0.5s;
+}
+.hidden{
+    opacity: 1;
+    animation: hiden 0.5s;
+}
+.visible{
+    opacity: 0;
+    animation: visib 0.5s;
+}
+.poz0{
+    transform: rotate(0deg);
+    animation: poz0 0.5s;
+}
+.obrocony {
+    transform: rotate(180deg);
+    animation: obrocony 0.5s;
+}
+
+@keyframes poz0 {
+    from{transform: rotate(180deg);}
+    to{transform: rotate(0deg);}
+}
+
+@keyframes obrocony {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(180deg);}
+}
+
+@keyframes hiden {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes visib{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+
+@keyframes schowaj {
+    from {
+        left: 0px;
+    }
+    to {
+        left: -155px;
+    }
+}
+
+@keyframes pokaz {
+    from {
+        left: -155px;
+    }
+    to {
+        left: 0px;
+    }
+}

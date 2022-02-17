@@ -1,0 +1,65 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="jQuery.js"></script>
+    <script src="skrypt.js"></script>
+</head>
+<body>
+    <header>
+        <div id="naglowek">
+            <div id="logo">
+                <img src="grafika/logo.png" style="margin: 18px auto auto auto; display: block;">
+            </div>
+            <div id="kafelki">
+                <input type="button" class="bttn" style="width: 126px; background-image: url('grafika/aktualnosci.png');">
+                <input type="button" class="bttn" style="width: 81px; background-image: url('grafika/branze.png');">
+                <input type="button" class="bttn wyrownaj" style="width: 101px; background-image: url('grafika/produkty.png');">
+                <input type="button" class="bttn wyrownaj" style="width: 76px; background-image: url('grafika/uslugi.png');">
+                <input type="button" class="bttn wyrownaj" style="width: 116px; background-image: url('grafika/referencje.png');">
+                <input type="button" class="bttn" style="width: 90px; background-image: url('grafika/kontakt.png');">
+            </div>
+        </div>
+        <div id="wyszukaj">
+            <img src="grafika/szukaj.png" style="margin-right:5px;" id="pasek">
+            <input type="text" id="input">
+            <img src="grafika/lupa.png" onclick="szukaj()">
+        </div>
+    </header>
+    <main>
+        <div id="srodek">
+            <div id="firma">
+                <img src="grafika/domek.png" id="ofirmie">
+                <img src="grafika/ofirmie.png" id="domek">
+            </div>
+            <img src="grafika/podzialka.png" id="podzialduza">
+        </div>
+        
+        <div id="content">
+            <img src="grafika/Zdjecie.png" id="zdjecie">
+            <img src="grafika/TekstL.png" id="tekstL">
+            <img src="grafika/TekstP.png" id="tekstP">
+        </div>
+    </main>
+    <nav>
+        <img src="grafika/logo_male.png" id="logomale">
+        <div id="menu">
+            <div id="wmenu">
+                <img class="clearboth" style="margin-bottom: 20px;" src="grafika/Menu/Menu.png">
+                <img class="clearboth" style="margin-bottom: 20px;" src="grafika/Menu/przedzialka.png">
+                <img class="clearboth" style="margin-bottom: 20px;" src="grafika/Menu/menu_tekst.png">
+                <img class="clearboth" src="grafika/Menu/przedzialka.png">
+                <img class="clearboth" style="position: absolute; top: 339px;" src="grafika/Menu/przedzialka.png">
+                <img class="clearboth" style="margin-bottom: 20px; margin-top: 25px;" src="grafika/Menu/FB.png">
+                <img class="clearboth" src="grafika/Menu/in.png">
+            </div>
+            <img src="grafika/Menu/trojkat.png" id="trojkat" onclick="animacja()">
+            <img src="grafika/male_menu/menu.png" id="malemenu">
+        </div>
+    </nav>
+    <div id="stopka"></div>
+</body>
+</html>
